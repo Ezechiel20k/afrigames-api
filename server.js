@@ -6,10 +6,7 @@ const { Pool } = require('pg');
 const app = express();
 
 // Configuration du CORS pour accepter ton site Vercel (et ton futur domaine)
-app.use(cors({
-  origin: process.env.FRONTEND_URL,
-  credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 
